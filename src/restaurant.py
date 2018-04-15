@@ -6,7 +6,7 @@ order_list = dict()
 
 
 def read_order_list():
-    with open('order.txt') as f:
+    with open('order.txt', encoding='cp1251') as f:
         for raw_line in f:
             title = raw_line.strip()
             quantity = f.readline().strip()
